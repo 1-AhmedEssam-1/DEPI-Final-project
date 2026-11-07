@@ -1,0 +1,8 @@
+# Versions installed in the current Anaconda notebook environment.
+pandas==3.0.5
+numpy==2.5.2
+scipy==1.18.1
+scikit-learn==1.9.1
+joblib==1.6.0
+ipykernel==7.3.0
+ipython==9.15.0

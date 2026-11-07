@@ -1,0 +1,35 @@
+# Local datasets and generated outputs: retain folder guides
+/data/raw/*
+!/data/raw/README.md
+/data/interim/*
+!/data/interim/README.md
+/data/processed/*
+!/data/processed/README.md
+/artifacts/preprocessors/*
+!/artifacts/preprocessors/README.md
+/artifacts/models/*
+!/artifacts/models/README.md
+/artifacts/metadata/*
+!/artifacts/metadata/README.md
+
+# Local environments, credentials, and caches
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+mlruns/
+mlartifacts/
+*.log
+.DS_Store
+Thumbs.db
+*.pbix.autorecovery

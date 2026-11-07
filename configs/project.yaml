@@ -1,0 +1,15 @@
+# Planning settings: code must explicitly load this file to use them.
+project_name: alternative-credit-scoring
+paths:
+  raw_data: data/raw/home-credit-default-risk
+  interim_data: data/interim
+  processed_data: data/processed
+  artifacts: artifacts
+  reports: reports
+split:
+  validation_fraction: 0.2
+  random_state: 42
+  stratify_target: true
+columns:
+  identifier: SK_ID_CURR
+  target: TARGET
