@@ -1,3 +1,3 @@
-# Fitted artifacts
+# Saved preprocessing
 
-Store fitted preprocessors, trained models, and supporting metadata in the subfolders. Generated contents are ignored by Git. These objects are different from prepared rows in data/processed.
+preprocessors/application contains the fitted standard scikit-learn tool that fills, encodes, and scales inputs. metadata/application records its feature schema and checks. These are outputs, not extra code you need to edit.

@@ -1,3 +1,3 @@
-# Project reports
+# Data reports
 
-Store aggregate data-quality findings, cleaning decisions, model evaluation summaries, and presentation figures. Review reports before committing; do not include applicant-level raw exports by default.
+The data_quality subfolder contains saved inspection findings, application cleaning decisions, and completion checks. These reports explain results; no helper code lives here.

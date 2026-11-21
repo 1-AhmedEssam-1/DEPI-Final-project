@@ -1,41 +1,30 @@
-# Alternative Credit Scoring
+# Alternative Credit Scoring - Application Preprocessing
 
-A learning project using Kaggle Home Credit Default Risk to predict payment-difficulty risk. A demonstration score may be developed later; this is not a validated lending score.
+## Where to work
 
-## Current work
+Open `notebooks/02_application_preprocessing.ipynb` in VS Code. Select your Python kernel and run cells from the top. All code is directly in the notebook; no src package, helper scripts, or other preprocessing notebooks are needed.
 
-Start with `notebooks/01_data_understanding.ipynb`, then `notebooks/02_application_preprocessing.ipynb`. The second notebook currently focuses on `application_train.csv`. Cleaning and application feature engineering are in progress; encoding, final preprocessing, model training, and historical-table integration are not yet complete.
+`notebooks/01_data_understanding.ipynb` contains your earlier exploration.
 
-## Setup
+## Simple folder guide
 
-1. Open this project folder in VS Code.
-2. Select the Python environment used for your notebooks (currently Anaconda base), or create a separate project environment.
-3. Install the packages in `requirements.txt` if needed: `python -m pip install -r requirements.txt`.
-4. Select that environment as the notebook kernel and run cells in order. The notebooks find project data from either the project root or the notebooks directory.
-5. See `data/README.md` for the dataset location and download source.
-
-## Project folders
-
-| Path | Purpose |
+| Folder | Contents |
 |---|---|
-| notebooks/ | Learning, investigation, and experiments |
-| src/credit_scoring/ | Finalized reusable Python functions |
-| configs/ | Shared settings |
-| data/raw/ | Original local datasets |
-| data/interim/ | Intermediate cleaned tables and summaries |
-| data/processed/ | Prepared feature matrices, outcomes, and row IDs |
-| pipelines/ | Scripts coordinating repeatable workflows |
-| artifacts/ | Fitted preprocessors, models, and metadata |
-| reports/ | Data-quality results, evaluations, and figures |
-| dashboard/ | BI dashboard files and SQL |
-| app/ | Future prediction API or interface |
-| tests/ | Meaningful checks for reusable project code |
-| deployment/ | Future deployment configuration |
-| docs/ | Scope, architecture, definitions, and teamwork |
-| .github/workflows/ | Future GitHub automation |
+| notebooks/ | Your two notebooks; this is where you work |
+| data/raw/home-credit-default-risk/ | Original Kaggle CSVs, unchanged |
+| data/interim/application/ | Saved cleaned and engineered application tables |
+| data/processed/application/ | Prepared training/validation matrices, targets, IDs, and unimputed inputs |
+| artifacts/preprocessors/application/ | Fitted standard scikit-learn preprocessing object |
+| artifacts/metadata/application/ | Feature names, retained columns, settings, and verification |
+| reports/data_quality/ | Inspection findings and completed cleaning decisions |
+| docs/application_handoff.md | What the saved files mean for your modeling teammate |
 
-Most folders are documented scaffolding, not completed functionality. See `docs/team_workflow.md` for the handoff to modeling.
+## Current task
 
-## GitHub
+Complete application_train.csv preprocessing only: confirmed cleaning, application features, training/validation split, imputation, one-hot encoding, numeric scaling, checks, and saving outputs. No model is trained here. Other Kaggle CSVs remain untouched for later work.
 
-Datasets, local secrets, caches, and generated artifacts are ignored. Use `git status` and review staged files before committing. This setup has not initialized a repository, created a remote, or pushed anything. Shared documentation and selected aggregate reports can be committed; review them for applicant-level information first.
+Notebook sections 11-21 contain the completed preparation code. Read one section at a time; use the saved outputs or rerun from the beginning.
+
+Python packages are listed in requirements.txt. If needed, install in your intended environment with `python -m pip install -r requirements.txt`. The notebooks locate data from either the project root or notebooks directory.
+
+Raw/processed data and fitted objects are ignored by Git. Review notebook outputs before public sharing. No commits or pushes are performed by the preprocessing notebook.

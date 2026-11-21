@@ -1,0 +1,9 @@
+area,decision
+Employment,Replace 365243 with missing; retain its original flag
+Categories,"Retain XNA, Unknown, and valid rare categories"
+Extreme income,Retain; no verified correction available
+Features,"Add years, ratios, and missing car-age flag"
+Columns,Remove duplicate day representations; training-only constant/all-empty selection
+Numeric gaps,Fill with training medians
+Text gaps,"Fill with __MISSING__, then one-hot encode"
+Scaling,StandardScaler fitted on training numeric values

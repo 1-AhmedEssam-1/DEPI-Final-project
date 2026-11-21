@@ -33,3 +33,6 @@ mlartifacts/
 .DS_Store
 Thumbs.db
 *.pbix.autorecovery
+
+# Local scratch space and optional document-generation dependencies
+/tmp/

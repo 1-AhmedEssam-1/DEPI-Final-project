@@ -1,3 +1,3 @@
-# Metadata
+# Preparation metadata
 
-Ordered feature names, fitted configurations, and artifact metadata. Generated files are ignored by Git.
+The application manifest records input columns, transformed feature names, package versions, and verification. Generated contents are ignored by Git.
