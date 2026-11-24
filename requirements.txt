@@ -6,3 +6,4 @@ scikit-learn==1.9.1
 joblib==1.6.0
 ipykernel==7.3.0
 ipython==9.15.0
+pyarrow==26.0.1
