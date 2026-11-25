@@ -48,3 +48,6 @@ report/data_quality
 scripts
 tests
 notebooks/history_data/eda
+
+
+/output/
